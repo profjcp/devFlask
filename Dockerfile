@@ -5,7 +5,7 @@ ENV FLASK_APP app.py
 
 ENV FLASK_RUN_HOST 0.0.0.0
 
-ENV FLASK_RUN_PORT 7000
+#ENV FLASK_RUN_PORT 7000
 
 # switch working directory
 WORKDIR /webapp
@@ -23,4 +23,4 @@ COPY . /webapp
 EXPOSE 5000
 
 # configure the container to run in an executed manner
-CMD [ "python3", "-m", "Flask", "RUN" ]
+CMD [ "python3", "-m", "flask", "run" ]
