@@ -11,7 +11,7 @@ ENV FLASK_RUN_PORT 7000
 WORKDIR /webapp
 
 # copy the requirements file into the image
-COPY ./requirements.txt /app/requirements.txt
+COPY ./requirements.txt /webapp/requirements.txt
 
 # install the dependencies and packages in the requirements file
 RUN pip install --upgrade pip
